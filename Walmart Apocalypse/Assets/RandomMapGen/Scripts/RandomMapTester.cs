@@ -18,6 +18,12 @@ public class RandomMapTester : MonoBehaviour {
 	public Texture2D islandTexture;
 
 	[Space]
+	[Header("Player")]
+	public GameObject playerPrefab;
+	public GameObject player; 
+
+
+	[Space]
 	[Header("Decorate Map")]
 	[Range(0, .9f)]
 	public float erodePercent = .5f;
@@ -36,6 +42,9 @@ public class RandomMapTester : MonoBehaviour {
 	public float lakePercent = .05f;
 
 	public Map map;
+
+	private int tmpX;
+	private int tmpY;
 
 	// Use this for initialization
 	void Start () {
@@ -95,6 +104,20 @@ public class RandomMapTester : MonoBehaviour {
 
 	}
 
+	public void CreatePlayer(){
+
+		player = Instantiate (playerPrefab);
+		player.name = "Player";
+		player.transform.SetParent (mapContainer.transform);
+
+		var controller = player.GetComponent<MapMovementController> ();
+		controller.map = map;
+		controller.tileSize = tileSize;
+		controller.MoveTo(map.castleTile.id);
+
+	}
+
+
 	void ClearMapContainer(){
 
 		var children = mapContainer.transform.GetComponentsInChildren<Transform> ();
@@ -108,8 +131,11 @@ public class RandomMapTester : MonoBehaviour {
 
 		var camPos = Camera.main.transform.position;
 		var width = map.columns;
-		camPos.x = (index % width) * tileSize.x;
-		camPos.y = -((index / width) * tileSize.y);
+
+		PosUtil.CalculatePos (index, width, out tmpX, out tmpY);
+
+		camPos.x = tmpX * tileSize.x;
+		camPos.y = -tmpY * tileSize.y;
 		Camera.main.transform.position = camPos;
 
 	}
