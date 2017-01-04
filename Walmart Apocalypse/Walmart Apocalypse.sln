@@ -1,11 +1,11 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{B59B35C2-7321-11F4-33CE-878D86CC6CBB}") = "Walmart Apocalypse", "Assembly-CSharp-firstpass.csproj", "{8E81532F-C1F9-FE04-0EBA-5D0286B962A8}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walmart Apocalypse.CSharp.Plugins", "Walmart Apocalypse.CSharp.Plugins.csproj", "{D34E913A-FEA1-8D72-842D-60CC9A1E7673}"
 EndProject
-Project("{B59B35C2-7321-11F4-33CE-878D86CC6CBB}") = "Walmart Apocalypse", "Assembly-CSharp.csproj", "{2593A607-D796-79C7-FAFE-D8C54E818D8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walmart Apocalypse.CSharp", "Walmart Apocalypse.CSharp.csproj", "{DC920D38-4D31-97DD-D6BA-4FF7DF765433}"
 EndProject
-Project("{B59B35C2-7321-11F4-33CE-878D86CC6CBB}") = "Walmart Apocalypse", "Assembly-CSharp-Editor.csproj", "{C533842C-D4E4-8B00-E41B-45E849F0E92A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walmart Apocalypse.CSharp.Editor", "Walmart Apocalypse.CSharp.Editor.csproj", "{B6AAFA9F-D3FB-FF0B-2014-A5844AC9A425}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,23 +13,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8E81532F-C1F9-FE04-0EBA-5D0286B962A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E81532F-C1F9-FE04-0EBA-5D0286B962A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E81532F-C1F9-FE04-0EBA-5D0286B962A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E81532F-C1F9-FE04-0EBA-5D0286B962A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2593A607-D796-79C7-FAFE-D8C54E818D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2593A607-D796-79C7-FAFE-D8C54E818D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2593A607-D796-79C7-FAFE-D8C54E818D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2593A607-D796-79C7-FAFE-D8C54E818D8A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C533842C-D4E4-8B00-E41B-45E849F0E92A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C533842C-D4E4-8B00-E41B-45E849F0E92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C533842C-D4E4-8B00-E41B-45E849F0E92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C533842C-D4E4-8B00-E41B-45E849F0E92A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D34E913A-FEA1-8D72-842D-60CC9A1E7673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34E913A-FEA1-8D72-842D-60CC9A1E7673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34E913A-FEA1-8D72-842D-60CC9A1E7673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34E913A-FEA1-8D72-842D-60CC9A1E7673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC920D38-4D31-97DD-D6BA-4FF7DF765433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC920D38-4D31-97DD-D6BA-4FF7DF765433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC920D38-4D31-97DD-D6BA-4FF7DF765433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC920D38-4D31-97DD-D6BA-4FF7DF765433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6AAFA9F-D3FB-FF0B-2014-A5844AC9A425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6AAFA9F-D3FB-FF0B-2014-A5844AC9A425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6AAFA9F-D3FB-FF0B-2014-A5844AC9A425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6AAFA9F-D3FB-FF0B-2014-A5844AC9A425}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
